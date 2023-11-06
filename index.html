@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Quiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "sans-serif";
+        background-color: #edf2f7;
+      }
+
+      .quiz-container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .question-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .question-header .badge {
+        background-color: #f6e05e;
+        color: #1a202c;
+        border-radius: 4px;
+        padding: 3px 6px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      .question-content {
+        background-color: #ebf4ff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        margin-top: 10px;
+      }
+
+      .choices {
+        margin-top: 10px;
+      }
+
+      .choices button {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #4a90e2;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      .choices button:hover {
+        background-color: #357ebd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="quiz-container">
+      <h1 class="text-4xl mb-4">MCQ Quiz</h1>
+      <div class="bg-white p-6 rounded shadow-lg">
+        <div class="question-header">
+          <span class="font-bold"><i class="fas fa-book-open"></i> Question No. 1</span>
+          <div class="text-right">
+            <span class="mr-1"><i class="fas fa-thumbs-up lesson-text"></i></span>
+            Success Rate: 50% <span class="badge">Pro</span>
+          </div>
+        </div>
+        <div class="question-content" id="question">
+          <!-- Question content goes here -->
+        </div>
+        <div class="choices flex flex-col" id="choices">
+          <!-- Dynamically generated options will go here -->
+        </div>
+
+        <div class="flex justify-between mt-6">
+          <button id="submit">Explanation</button>
+          <button id="next">See Discussion</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
