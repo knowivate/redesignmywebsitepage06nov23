@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     choicesElement.innerHTML = "";
     question.choices.forEach((choice) => {
       const choiceItem = document.createElement("a");
-      choiceItem.classList.add("list-group-item", "list-group-item-action", "py-2", "px-4", "mb-2", "rounded-md", "bg-blue-500", "text-white", "cursor-pointer");
+      choiceItem.classList.add("list-group-item", "list-group-item-action", "py-2", "px-4", "mb-2", "rounded-md", "bg-blue-500", "disabled:bg-blue-400", "text-white", "cursor-pointer");
       choiceItem.textContent = choice;
 
       choiceItem.addEventListener("mouseover", () => {
@@ -42,9 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach((button) => {
       button.disabled = true;
       if (button.textContent === correctAnswer) {
-        button.classList.add("correct");
+        button.classList.add("bg-green-500");
+      }
+      if (button.textContent === choice) {
+        if (choice === correctAnswer) {
+          button.classList.add("bg-green-500");
+        } else {
+          button.classList.add("bg-red-500");
+        }
       }
     });
+
     if (choice === correctAnswer) {
       showModal("Correct Answer! ✔️");
     } else {
