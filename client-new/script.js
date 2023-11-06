@@ -91,12 +91,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // ... your existing code ...
 
   const modalCloseButtons = document.querySelectorAll(".modal-close");
+  const submitAkaExplanationButton = document.getElementById("submit");
 
   modalCloseButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      console.log("Modal close button clicked.");
       closeModal();
     });
+  });
+
+  submitAkaExplanationButton.addEventListener("click", () => {
+    showModal("Explanation", "Paris is not only the capital but also the largest city in France. It is renowned for its rich cultural heritage, iconic landmarks such as the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral, as well as its influence in art, fashion, and cuisine. This vibrant city has a profound impact on global culture and tourism, making it a significant hub in Europe and around the world.");
   });
 
   // ... rest of your code ...
