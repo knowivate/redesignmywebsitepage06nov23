@@ -1,106 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
 }
 
 #quiz-container {
-    background-color: white;
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: white;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
-/* Add only custom styles here, if necessary, as Bootstrap handles most styling */
 
 .choice-button {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
-
 
 .choice-button:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 .list-group-item {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    position: relative;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative;
 }
 
 .list-group-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 5px; /* Width of the green stripe */
-    background-color: rgb(19, 255, 35); /* Green color */
-    border-top-left-radius: 5px; /* Rounded corner on the top-left */
-    border-bottom-left-radius: 5px; /* Rounded corner on the bottom-left */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: rgb(19, 255, 35);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .list-group-item-action:hover {
-    background-color: #f8f9fa;
-    cursor: pointer;
+  background-color: #f8f9fa;
+  cursor: pointer;
 }
 .alert-info {
-    background-color: #c6ffd1; /* Light blue background */
-    border-color: #bee5eb; /* Border color */
-    color: #0c5460; /* Text color */
-    padding: 15px; /* More padding for emphasis */
-    border-radius: 10px; /* Rounded corners */
-    /* Other custom styles if needed */
+  background-color: #c6ffd1;
+  border-color: #bee5eb;
+  color: #0c5460;
+  padding: 15px;
+  border-radius: 10px;
 }
-/* Animations or transitions for smoother feel */
-.list-group-item, .alert {
-    transition: background-color 0.3s ease;
+
+.list-group-item,
+.alert {
+  transition: background-color 0.3s ease;
 }
 .card-body > .d-flex {
-    padding-right: 15px; /* Adjust this value as needed */
-    padding-top: 15px;  /* Adjust this value as needed */
+  padding-right: 15px;
+  padding-top: 15px;
 }
 .lesson-bar {
-    background: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
 .lesson-bar i {
-    margin-right: 10px;
-    color: #888;
+  margin-right: 10px;
+  color: #888;
 }
 .lesson-text {
-    flex: 1;
-    font-size: 18px;
-    color: #333;
+  flex: 1;
+  font-size: 18px;
+  color: #333;
 }
 .pro-badge {
-    background-color: #ffe082;
-    padding: 5px 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    color: #b08c2e;
+  background-color: #ffe082;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #b08c2e;
 }
 .lock-icon {
-    margin-right: 5px;
-    color: #b08c2e;
-}
+  margin-right: 5px;
+  color: #b08c2e;
+} */
