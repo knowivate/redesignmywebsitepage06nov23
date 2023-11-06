@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
     if (choice === correctAnswer) {
-      alert("Correct Answer! ✔️");
+      showModal("Correct Answer! ✔️");
     } else {
-      alert("Wrong Answer. Correct is " + correctAnswer);
+      showModal("Wrong Answer.", "Correct is " + correctAnswer);
     }
   }
 
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentQuestionIndex < questions.length) {
       showQuestion(questions[currentQuestionIndex]);
     } else {
-      // alert("Quiz finished! 🎉");
       showModal("Quiz finished! 🎉", "You won!");
       currentQuestionIndex = 0;
       showQuestion(questions[currentQuestionIndex]);
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
   showQuestion(questions[currentQuestionIndex]);
 });
 
-function showModal(modalTitle, modalContent) {
+function showModal(modalTitle, modalContent = "") {
   const modal = document.getElementById("modal");
   modal.classList.remove("hidden");
   const modalTitleElement = document.getElementById("modalTitle");
